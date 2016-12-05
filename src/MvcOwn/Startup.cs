@@ -36,7 +36,7 @@ namespace MvcOwn
 
             //app.Run(async (context) =>
             //{
-            //    await context.Response.WriteAsync("Hello world!");
+            //    await context.Response.WriteAsync("Hello world2!");
             //});
         }
     }
