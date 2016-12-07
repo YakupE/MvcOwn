@@ -14,6 +14,12 @@ namespace MvcOwn.Controllers
         // GET: /<controller>/
         public IActionResult Index(int id)
         {
+
+            //return Unauthorized();
+            //return BadRequest();
+            //return NotFound();
+
+            
             Contact contact = new Contact()
             {
                 ID = id,
@@ -22,6 +28,16 @@ namespace MvcOwn.Controllers
             };
 
             return View(contact);
+            
+
+            //return Content("<!doctype html><html><head></head><body><h2>Hallo daar!</h2></body></html>", "text/html");
+
+        }
+
+        
+        public IActionResult DownloadFile()
+        {
+            return File("/download/TestData.txt", "text/plain", "Test data.txt");
         }
     }
 }
